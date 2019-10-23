@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #555;
+            margin: 0px;
+        }
+        #navigeyshin{
+            background-color: #333;
+            width: 250px;
+            box-shadow: 0 0 3px 2px #111;
+            margin-left: -250px;
+            transition: 0.5s;
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-family: arial;
+        }
+        li{
+            padding: 15px 20px 15px 20px;
+            border-bottom: 1px solid #222;
+        }
+        #menu{
+            font-size: 54px;
+            margin-left:250px; 
+            color: #333;
+        }
+        li:hover{
+            background-color: #444;
+        }
+        li:last-child:hover{
+            background-color: transparent;
+
+        }
+        #navigeyshin:hover{
+            margin-left: 0px;
+            
+        }
+        #menu{
+            font-size: 45px;
+            margin-left: 250px;
+            color:#333;
+            animation: flashing 3s infinite
+        }
+        @keyframes flashing{
+            from{ color:transparent;} 
+            to{color:#333;}
+        }
+    </style>
+</head>
+<body>
+    <nav id="navigeyshin">
+        <ul>
+            <li> <a href=""><img src="http://icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/24/Home-icon.png"> Home </a> </li>
+            <li> <a href=""><img src="http://icons.iconarchive.com/icons/martz90/circle/24/camera-icon.png"> Photos </a> </li>
+            <li> <a href=""><img src="http://icons.iconarchive.com/icons/graphicloads/polygon/24/people-2-icon.png"> Communities </a> </li>
+            <li> <a href=""><img src="http://icons.iconarchive.com/icons/google/noto-emoji-objects/24/62868-page-facing-up-icon.png"> Pages </a> </li>
+            <li> <a href=""><img src="http://icons.iconarchive.com/icons/google/noto-emoji-travel-places/24/42522-hot-springs-icon.png"> Hot </a> </li>
+            <li><a id="menu" href="">&#10263;</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
